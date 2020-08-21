@@ -34,12 +34,12 @@
 						<div class="header__chooseLanguage">
 										
 										<!-- dropdown -->
-										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">EN <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">TR <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<div class="dropdown__content" data-position="right">
 												<ul class="list-style-none">
-													<li><a href="#">EN</a></li>
-													<li><a href="#">DE</a></li>
-													<li><a href="#">VI</a></li>
+													<li><a href="#" hreflang="en" onclick="setLang('tr'); return false">TR</a></li>
+													<li><a href="#" hreflang="en" onclick="setLang('ar'); return false">AR</a></li>
+													<li><a href="#" hreflang="en" onclick="setLang('en'); return false">EN</a></li>
 												</ul>
 											</div>
 										</div><!-- End / dropdown -->
@@ -68,16 +68,6 @@
 							<li class="current-menu-item"><a href="index.html">Home</a>
 							</li>
 							<li><a href="about.html">about</a>
-							</li>
-							<li class="menu-item-has-children"><a href="#">page</a>
-								<ul class="sub-menu">
-									<li><a href="comming-soon.html">Comming Soon</a>
-									</li>
-									<li><a href="404.html">404</a>
-									</li>
-									<li><a href="typography.html">Typography</a>
-									</li>
-								</ul>
 							</li>
 							<li><a href="service.html">services</a>
 							</li>
@@ -110,20 +100,29 @@
 				<div class="slider">
 					
 					<!-- carousel__element owl-carousel -->
-					<div class="carousel__element owl-carousel" data-options='{"items":1,"loop":true,"dots":false,"nav":false,"margin":0, "autoplay": true, "autoplayTimeout": 3000}'>
+					<div class="carousel__element owl-carousel">
 						<div class="slider__item" style="background-image: url('assets/img/slider.jpg');">
 							<div class="md-tb">
 								<div class="md-tb__cell">
 									<div class="slider__content">
-										<div class="container">
+										<div class="container" lang="en">
 											<h2>We provide free template</h2>
+											<p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p>
+										</div>
+										<div class="container" lang="ar">
+											<h2>عربي</h2>
+											<p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p>
+										</div>
+										<div class="container" lang="tr">
+											<h2>türkçe</h2>
 											<p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="slider__item" style="background-image: url('https://picsum.photos/1920/1080');">
+						<!-- 
+<div class="slider__item" style="background-image: url('https://picsum.photos/1920/1080');">
 							<div class="md-tb">
 								<div class="md-tb__cell">
 									<div class="slider__content">
@@ -135,6 +134,7 @@
 								</div>
 							</div>
 						</div>
+ -->
 					</div><!-- End / carousel__element owl-carousel -->
 					
 				</div><!-- End / slider -->
@@ -142,50 +142,52 @@
 				<!-- Service-->
 				
 				<!-- Section -->
-				<section class="md-section" style="background-color:#f7f7f7;padding:0;">
+				<!-- 
+<section class="md-section" style="background-color:#f7f7f7;padding:0;">
 					<div class="container">
 						<div class="textbox-group">
 							<div class="row">
 								<div class="col-md-4 col-lg-4 ">
 									
-									<!-- textbox -->
+									<!~~ textbox ~~>
 									<div class="textbox">
 										<div class="textbox__image"><a href="#"><img src="assets/img/services/4.jpg" alt=""/></a></div>
 										<div class="textbox__body">
 											<h2 class="textbox__title"><a href="#">Free template</a></h2>
 											<div class="textbox__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt. Quisque lu</div>
 										</div>
-									</div><!-- End / textbox -->
+									</div><!~~ End / textbox ~~>
 									
 								</div>
 								<div class="col-md-4 col-lg-4 ">
 									
-									<!-- textbox -->
+									<!~~ textbox ~~>
 									<div class="textbox">
 										<div class="textbox__image"><a href="#"><img src="assets/img/services/5.jpg" alt=""/></a></div>
 										<div class="textbox__body">
 											<h2 class="textbox__title"><a href="#">Responsive Layout</a></h2>
 											<div class="textbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. </div>
 										</div>
-									</div><!-- End / textbox -->
+									</div><!~~ End / textbox ~~>
 									
 								</div>
 								<div class="col-md-4 col-lg-4 ">
 									
-									<!-- textbox -->
+									<!~~ textbox ~~>
 									<div class="textbox">
 										<div class="textbox__image"><a href="#"><img src="assets/img/services/6.jpg" alt=""/></a></div>
 										<div class="textbox__body">
 											<h2 class="textbox__title"><a href="#">SEO Optimized</a></h2>
 											<div class="textbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div>
 										</div>
-									</div><!-- End / textbox -->
+									</div><!~~ End / textbox ~~>
 									
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+ -->
 				<!-- End / Section -->
 				
 				
@@ -199,8 +201,16 @@
 								<div class="iconbox">
 									<div class="iconbox__icon"><i class="ti-headphone-alt"></i></div>
 									<div>
-										<h2 class="iconbox__title"><a href="#">Best National Locations</a></h2>
-										<div class="iconbox__description">Nam elit ligula, egestas et ornare non, viverra eu justo. Aliquam ornare lectus ut pharetra dictum. Aliquam erat volutpat. In fringilla erat at eros pharetra faucibus. Nunc a magna eu lectus fringilla interdum luctus vitae diam. Morbi ac orci ac dolor pellentesque interdum vel accumsan risus. In ves</div>
+										<h2 class="iconbox__title" lang="tr"><a href="#">BİZ KİMİZ</a></h2>
+										<h2 class="iconbox__title" lang="ar"><a href="#">ABOUT</a></h2>
+										<h2 class="iconbox__title" lang="en"><a href="#">من نحن</a></h2>
+										<div class="iconbox__description">Türkiye’de hayallerini gerçekleştirmek isteyen, kendine ve eğitimine yatırım yapmak
+isteyen, Türkiye’de yaşamak ve çalışmak isteyen, yatırım yapmak isteyen, Türkiye’deki saklı
+cennetleri keşfetmek isteyen kişilere yardımcı olmak amacıyla kurulmuş ve siz değerli
+danışanlarımızın taleplerini karşılamak adına emek veren bir kuruluşuz.
+Bizler DRE CONSULTANCY olarak, siz değerli danışanlarımızın her daim yanında
+olmaktan ve özverili çalışmaktan memnuniyet duymaktayız.
+Ekibimiz ve çalışma alanlarımızdaki özel danışmanlarız ile sizlerin hizmetinizdeyiz.</div>
 									</div>
 								</div><!-- End / iconbox -->
 								
