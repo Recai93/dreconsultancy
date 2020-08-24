@@ -1021,10 +1021,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.875;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     color: #626262;
+}
+
+.textbox__description {
+    font-size: 14px;
 }
 
 body.md-skin-dark {
@@ -1086,7 +1090,7 @@ h5 {
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 34px;
 }
 
 h3, h1, h2, h3 {
@@ -3373,7 +3377,6 @@ mark, .mark {
     color: #c2c2c2;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 10px;
 }
 
 .title-01__title {

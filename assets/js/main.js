@@ -1,5 +1,5 @@
 let langs = ['en', 'tr', 'ar'];
-let lang = 'tr';
+let lang = 'ar';
 setLangStyles(lang);
 
 function setStyles(styles) {
