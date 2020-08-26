@@ -223,8 +223,8 @@ a:focus {
 
 @media (min-width: 992px) {
     .md-section {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -3339,7 +3339,7 @@ mark, .mark {
 }
 
 .textbox__description {
-    color: #c2c2c2;
+    color: #585151;
 }
 
 .textbox__style-02 {
@@ -3374,7 +3374,7 @@ mark, .mark {
 }
 
 .title-01__subTitle {
-    color: #c2c2c2;
+    color: #585151;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -3662,7 +3662,7 @@ mark, .mark {
 
 @media (min-width: 1200px) {
     .footer__main {
-        padding: 140px 75px 60px;
+        padding: 50px 75px 50px;
     }
 }
 
@@ -3811,7 +3811,7 @@ mark, .mark {
 
 .header__logo {
     height: 100px;
-    max-width: 100px;
+    max-width: 200px;
     line-height: 100px;
     float: left;
     transition: height .3s ease;

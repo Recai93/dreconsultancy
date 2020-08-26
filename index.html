@@ -21,6 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css"><!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<![endif]-->
+		
 	</head>
 	
 	<body>
@@ -34,12 +35,13 @@
 						<div class="header__chooseLanguage">
 										
 										<!-- dropdown -->
-										<div class="dropdown" data-init="dropdown"><a class="dropdown__toggle" href="javascript:void(0)">AR <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+										<div class="dropdown" data-init="dropdown">
+										<a class="dropdown__toggle" href="javascript:void(0)" id="lang_tag">العربية<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 											<div class="dropdown__content" data-position="right">
 												<ul class="list-style-none">
-													<li><a href="#" hreflang="en" onclick="setLang('tr'); return false" style="font-size:15px;">TR</a></li>
-													<li><a href="#" hreflang="en" onclick="setLang('ar'); return false" style="font-size:15px;">AR</a></li>
-													<li><a href="#" hreflang="en" onclick="setLang('en'); return false" style="font-size:15px;">EN</a></li>
+													<li><a href="#" onclick="changeLanguage('tr')" style="font-size:15px;">Türkçe</a></li>
+													<li><a href="#" onclick="changeLanguage('ar')" style="font-size:15px;">العربية</a></li>
+													<li><a href="#" onclick="changeLanguage('en')" style="font-size:15px;">English</a></li>
 												</ul>
 											</div>
 										</div><!-- End / dropdown -->
@@ -65,25 +67,21 @@
 						
 						<!-- consult-menu -->
 						<ul class="consult-menu">
-							<li class="current-menu-item"><a href="index.html">Home</a>
+						
+							<li class="current-menu-item">
+							<a href="index.html" name="translate" caption="title_mainpage"></a>
 							</li>
-							<!-- <li><a href="about.html">about</a> -->
-							<!-- </li> -->
-							<li><a href="service.html">services</a>
+							
+							<li>
+							<a href="service.html" name="translate" caption="title_services"></a>
 							</li>
-							<!-- <li class="menu-item-has-children"><a href="project.html">project</a> -->
-								<!-- <ul class="sub-menu"> -->
-									<!-- <li><a href="project-detail.html">Project detail</a> -->
-									<!-- </li> -->
-								<!-- </ul> -->
-							<!-- </li> -->
-							<li class="menu-item-has-children"><a href="blog.html">blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog-detail.html">Blog detail</a>
-									</li>
-								</ul>
+							
+							<li>
+							<a href="service.html" name="translate" caption="title_blog"></a>
 							</li>
-							<li><a href="contact.html">contact</a>
+							
+							<li>
+							<a href="service.html" name="translate" caption="title_contact"></a>
 							</li>
 						</ul><!-- consult-menu -->
 						
@@ -106,15 +104,7 @@
 								<div class="md-tb__cell">
 									<div class="slider__content">
 										<div class="container" lang="en">
-											<h2>ENglish</h2>
-											<!-- <p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p> -->
-										</div>
-										<div class="container" lang="ar">
-											<h2>عربي</h2>
-											<!-- <p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p> -->
-										</div>
-										<div class="container" lang="tr">
-											<h2>türkçe</h2>
+											<h2 name="translate" caption="title_slogan"></h2>
 											<!-- <p>A Bootstrap 4 Responsive multi-purpose Theme for the Business, Web agency and more!</p> -->
 										</div>
 									</div>
@@ -138,31 +128,8 @@
 								<div class="iconbox">
 <!-- 									<div class="iconbox__icon"><i class="ti-headphone-alt"></i></div> -->
 									<div>
-										<h2 class="iconbox__title" lang="tr"><a href="#">BİZ KİMİZ</a></h2>
-										<h2 class="iconbox__title" lang="en"><a href="#">ABOUT</a></h2>
-										<h2 class="iconbox__title" lang="ar"><a href="#">من نحن</a></h2>
-										<div class="iconbox__description" lang="tr" align="center" >Türkiye’de hayallerini gerçekleştirmek isteyen, kendine ve eğitimine yatırım yapmak
-											isteyen, Türkiye’de yaşamak ve çalışmak isteyen, yatırım yapmak isteyen, Türkiye’deki saklı
-											cennetleri keşfetmek isteyen kişilere yardımcı olmak amacıyla kurulmuş ve siz değerli
-											danışanlarımızın taleplerini karşılamak adına emek veren bir kuruluşuz.
-											Bizler DRE CONSULTANCY olarak, siz değerli danışanlarımızın her daim yanında
-											olmaktan ve özverili çalışmaktan memnuniyet duymaktayız.
-											Ekibimiz ve çalışma alanlarımızdaki özel danışmanlarız ile sizlerin hizmetinizdeyiz.
-											Bizler DRE CONSULTANCY olarak, siz değerli danışanlarımızın her daim yanında 
-											olmaktan ve özverili çalışmaktan memnuniyet duymaktayız.
-											Ekibimiz ve çalışma alanlarımızdaki özel danışmanlarız ile sizlerin hizmetinizdeyiz.</div>
-										<div class="iconbox__description" lang="ar" align="center" >
-										شركتنا هي مركز للخدمات الاستشارية في إسطنبول وبورصة. تقدم الشركة خدماتها في مجالات التعليم، الاستثمار، العمل والإقامة في تركيا. نهدف لبذل كل جهدنا لتقديم الدعم الكامل في تلبية طلباتكم بالشكل الأفضل. من خلال طاقمنا المؤهل في مجالاتنا المختلفة نسعى الى كسب ثقتكم وتلبية احتياجاتكم في أقصر وقت ممكن</div>
-										<div class="iconbox__description" lang="en" align="center" >Türkiye’de hayallerini gerçekleştirmek isteyen, kendine ve eğitimine yatırım yapmak
-											isteyen, Türkiye’de yaşamak ve çalışmak isteyen, yatırım yapmak isteyen, Türkiye’deki saklı
-											cennetleri keşfetmek isteyen kişilere yardımcı olmak amacıyla kurulmuş ve siz değerli
-											danışanlarımızın taleplerini karşılamak adına emek veren bir kuruluşuz.
-											Bizler DRE CONSULTANCY olarak, siz değerli danışanlarımızın her daim yanında
-											olmaktan ve özverili çalışmaktan memnuniyet duymaktayız.
-											Ekibimiz ve çalışma alanlarımızdaki özel danışmanlarız ile sizlerin hizmetinizdeyiz.
-											Bizler DRE CONSULTANCY olarak, siz değerli danışanlarımızın her daim yanında 
-											olmaktan ve özverili çalışmaktan memnuniyet duymaktayız.
-											Ekibimiz ve çalışma alanlarımızdaki özel danışmanlarız ile sizlerin hizmetinizdeyiz.</div>		
+										<h2 class="iconbox__title"><a href="#" name="translate" caption="title_about"></a></h2>
+										<div class="iconbox__description" align="center" name="translate" caption="content_about"></div>
 									</div>
 								</div><!-- End / iconbox -->
 								
@@ -175,9 +142,7 @@
 								<div class="iconbox iconbox__style-02">
 									<div class="iconbox__icon"><i class="ti-book"></i></div>
 									<div>
-										<h2 class="iconbox__title" lang="tr"><a href="#">EĞİTİM</a></h2>
-										<h2 class="iconbox__title" lang="ar"><a href="#">التعليم</a></h2>
-										<h2 class="iconbox__title" lang="en"><a href="#">EDUCATION</a></h2>
+										<h2 class="iconbox__title" name="translate" caption="title_education"><a href="#"></a></h2>
 										<!-- <div class="iconbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div> -->
 									</div>
 								</div><!-- End / iconbox -->
@@ -189,9 +154,7 @@
 								<div class="iconbox iconbox__style-02">
 									<div class="iconbox__icon"><i class="ti-home"></i></div>
 									<div>
-										<h2 class="iconbox__title" lang="tr"><a href="#">OTURUM</a></h2>
-										<h2 class="iconbox__title" lang="ar"><a href="#">الإقامة</a></h2>
-										<h2 class="iconbox__title" lang="en"><a href="#">RESIDANCY</a></h2>
+										<h2 class="iconbox__title" name="translate" caption="title_residancy"><a href="#"></a></h2>
 										<!-- <div class="iconbox__description">Etiam non varius justo, vel tempor mi. Nulla facilisi. Fusce at tortor arcu. Suspendisse maximus ac </div> -->
 									</div>
 								</div><!-- End / iconbox -->
@@ -203,9 +166,7 @@
 								<div class="iconbox iconbox__style-02">
 									<div class="iconbox__icon"><i class="ti-map-alt"></i></div>
 									<div>
-										<h2 class="iconbox__title" lang="tr"><a href="#">SEYAHAT</a></h2>
-										<h2 class="iconbox__title" lang="ar"><a href="#">السياحة</a></h2>
-										<h2 class="iconbox__title" lang="en"><a href="#">TRAVEL</a></h2>
+										<h2 class="iconbox__title" name="translate" caption="title_travel"><a href="#"></a></h2>
 										<!-- <div class="iconbox__description">Mauris lacinia venenatis dolor sit amet viverra. Integer malesuada nulla neque. Sed rutrum ligula eu</div> -->
 									</div>
 								</div><!-- End / iconbox -->
@@ -217,9 +178,7 @@
 								<div class="iconbox iconbox__style-02">
 									<div class="iconbox__icon"><i class="ti-money"></i></div>
 									<div>									
-										<h2 class="iconbox__title" lang="tr"><a href="#">GAYRİMENKUL DEĞERLEME VE SATIN ALMA</a></h2>
-										<h2 class="iconbox__title" lang="ar"><a href="#">الإستثمار العقاري</a></h2>
-										<h2 class="iconbox__title" lang="en"><a href="#">MORTGAGE</a></h2>
+										<h2 class="iconbox__title" name="translate" caption="title_mortgage"><a href="#"></a></h2>
 										<!-- <div class="iconbox__description">Suspendisse ac elit vitae est lacinia interdum eu sit amet mauris. Phasellus aliquam nisi sit amet l</div> -->
 									</div>
 								</div><!-- End / iconbox -->
@@ -233,32 +192,16 @@
 				<!-- About-->
 				
 				<!-- Section -->
-				<section class="md-section" style="background-color:#f7f7f7;padding-top:30;">
+				<section class="md-section" style="background-color:#f7f7f7;padding-top:100px;padding-bottom:0px;">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-10 col-xl-8 offset-0 offset-sm-0 offset-md-0 offset-lg-1 offset-xl-2 ">
 								
 								<!-- title-01 -->
 								<div class="title-01 title-01__style-04" >
-									<h6 class="title-01__subTitle" lang="tr">MİSYON VE VİZYONUMUZ</h6>
-									<h6 class="title-01__subTitle" lang="ar">رؤيتنا ورسالتنا</h6>
-									<h6 class="title-01__subTitle" lang="en">MİSYON VE VİZYONUMUZ</h6>
-									<!-- <h2 class="title-01__title">MİSYON VE VİZYONUMUZ</h2> -->
-									<div lang="tr">Kurucu ekibimiz olarak, uzun süredir devam eden çalışmalarımızı profesyonel alana
-										taşımak ve sizlere erişilebilirlik sağlamak amacıyla DRE CONSULTANCY’i kurduk.
-										Siz değerli danışanlarımızın hayallerini gerçekleştirmeyi ve her aşamada sizlerin
-										yanında olmayı misyon edindik. Sizlerin mutluluğu ile büyümek ve her zaman daha iyisini
-										yapmak düşüncesiyle, DRE CONSULTANCY olarak yüksek performans sergileyen bir ekip
-										olmaya devam edeceğiz.</div>
-									<div lang="ar">
-									نهدف في شركتنا إلى مشاركة خبرتنا في مجالاتنا الاستشارية المتعددة. نسعى إلى تحقيق أحلامكم ودعمكم في جميع المراحل خلال تجربتكم في تركيا. من واجبنا خلق علاقات مبنية على الثقة والاحترام بين العملاء وفريق العمل. هدفنا أن نحقق طلباتكم على أكمل وجه بكفائة عالية
-									</div>
-									<div lang="en">Kurucu ekibimiz olarak, uzun süredir devam eden çalışmalarımızı profesyonel alana
-										taşımak ve sizlere erişilebilirlik sağlamak amacıyla DRE CONSULTANCY’i kurduk.
-										Siz değerli danışanlarımızın hayallerini gerçekleştirmeyi ve her aşamada sizlerin
-										yanında olmayı misyon edindik. Sizlerin mutluluğu ile büyümek ve her zaman daha iyisini
-										yapmak düşüncesiyle, DRE CONSULTANCY olarak yüksek performans sergileyen bir ekip
-										olmaya devam edeceğiz.</div>
+									<h6 class="title-01__subTitle" name="translate" caption="title_vision"></h6>
+									
+									<div name="translate" caption="content_vision"></div>
 								</div><!-- End / title-01 -->
 								
 							</div>
@@ -269,16 +212,14 @@
 
 				<!-- Our partner-->
 				
-				<section class="md-section" style="padding-bottom:0;">
+				<section class="md-section" style="padding-bottom:0;padding-top:100px;">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8 col-lg-8 offset-0 offset-sm-0 offset-md-2 offset-lg-2 ">
 								
 								<!-- title-01 -->
-								<div class="title-01">
-									<h2 class="title-01__title" lang="tr">Ekibimiz</h2>
-									<h2 class="title-01__title" lang="ar">فريقنا</h2>
-									<h2 class="title-01__title" lang="en">Team</h2>
+								<div class="title-01" style="margin-bottom:0;">
+									<h2 class="title-01__title" name="translate" caption="title_team"></h2>
 								</div><!-- End / title-01 -->
 								
 							</div>
@@ -292,36 +233,8 @@
 								<div class="textbox textbox__style-02">
 									<div class="textbox__image"><a href="#"><img src="assets/img/avatars/1.jpg" alt=""/></a></div>
 									<div class="textbox__body" lang="tr">
-										<h2 class="textbox__title"><a href="#">Didem Tenekecioğlu</a></h2>
-										<div class="textbox__description">Yeditepe Üniversitesi Hukuk Fakültesi’nden mezun olan Avukat Didem TENEKECİOĞLU,
-											hukuki danışmanlık hizmetleri yürütmekte ve şirketimize vize işlemleri, gayrimenkul alımı ve
-											satımı, vatandaşlık başvuruları süreçlerinde destek vermektedir.
-											Anadili Türkçe olup, ileri düzeyde İngilizce bilmektedir.</div>
-											
-											<!--social-01-->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> End / social-01 --> 
-											
-									</div>
-									<div class="textbox__body" lang="ar">
-										<h2 class="textbox__title"><a href="#">ديدام تنكجي أوغلو</a></h2>
-										<div class="textbox__description">محامية حصلت على شهادة المحاماة من كلية الحقوق في جامعة يديتبا. مؤسسة الشركة ومتخصصة في أمور الجنسية التركية، أمور الفيزا، بيع وشراء العقارات. لغتها الأم هي اللغة التركية وتتحدث اللغة الانجليزية بطلاقة</div>
-											
-											<!--social-01-->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> End / social-01 --> 
-											
-									</div>
-									<div class="textbox__body" lang="en">
-										<h2 class="textbox__title"><a href="#">Didem Tenekecioğlu</a></h2>
-										<div class="textbox__description">Yeditepe Üniversitesi Hukuk Fakültesi’nden mezun olan Avukat Didem TENEKECİOĞLU,
-											hukuki danışmanlık hizmetleri yürütmekte ve şirketimize vize işlemleri, gayrimenkul alımı ve
-											satımı, vatandaşlık başvuruları süreçlerinde destek vermektedir.
-											Anadili Türkçe olup, ileri düzeyde İngilizce bilmektedir.</div>
+										<h2 class="textbox__title"><a href="#" name="translate" caption="name_didem"></a></h2>
+										<div class="textbox__description" name="translate" caption="content_didem"></div>
 											
 											<!--social-01-->
 											<!-- <div class="social-01"> -->
@@ -337,42 +250,8 @@
 								<div class="textbox textbox__style-02">
 									<div class="textbox__image"><a href="#"><img src="assets/img/avatars/2.jpg" alt=""/></a></div>
 									<div class="textbox__body" lang="tr">
-										<h2 class="textbox__title"><a href="#">Rajai Hussein</a></h2>
-										<div class="textbox__description">Filistin,Tulkarm doğumlu olan ve öğrenim görme amacıyla Türkiye’ye gelen Rajai Hussein,
-											kendi deneyimleri doğrultusunda, siz değerli danışanlarımız ile yaşadığı kişisel tecrübeyi
-											profesyonelliğe dönüştürmektedir.Ege Üniversitesi Bilgisayar Mühendisliği Bölümü’nden mezun olan ve şirketimizin kuruluş sürecinde önemli adımlar atmamıza
-											destek veren Rajai Hussein, şirketimize yabancı uyruklu öğrencilerin eğitim kayıt, yerleşme ve
-											yaşam planlaması süreçlerinde yardımcı olmaktadır.
-											Anadili Arapça olup, ileri düzeyde Türkçe ve İngilizce bilmektedir.</div>
-											
-											<!-- social-01 -->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> -->
-											<!-- End / social-01 -->
-											
-									</div>
-									<div class="textbox__body" lang="ar">
-										<h2 class="textbox__title"><a href="#">رجائي حسين</a></h2>
-										<div class="textbox__description">فلسطيني الجنسية، أكمل تعليمه الجامعي في مجال هندسة الحاسوب في جامعة إيجة في إزمير. بالاستفادة من تجربته الشخصية قام بتقديم خدماته للطلاب الأجانب في تركيا لسنوات عديدة. مؤسس الشركة ومتخصص في مجال التعليم والمعيشة للطلاب في تركيا. لغته الأم هي اللغة العربية ويتحدث اللغة التركية والانجليزية بطلاقة</div>
-											
-											<!-- social-01 -->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> -->
-											<!-- End / social-01 -->
-											
-									</div>
-									<div class="textbox__body" lang="en">
-										<h2 class="textbox__title"><a href="#">Rajai Hussein</a></h2>
-										<div class="textbox__description">Filistin,Tulkarm doğumlu olan ve öğrenim görme amacıyla Türkiye’ye gelen Rajai Hussein,
-											kendi deneyimleri doğrultusunda, siz değerli danışanlarımız ile yaşadığı kişisel tecrübeyi
-											profesyonelliğe dönüştürmektedir.Ege Üniversitesi Bilgisayar Mühendisliği Bölümü’nden mezun olan ve şirketimizin kuruluş sürecinde önemli adımlar atmamıza
-											destek veren Rajai Hussein, şirketimize yabancı uyruklu öğrencilerin eğitim kayıt, yerleşme ve
-											yaşam planlaması süreçlerinde yardımcı olmaktadır.
-											Anadili Arapça olup, ileri düzeyde Türkçe ve İngilizce bilmektedir.</div>
+										<h2 class="textbox__title"><a href="#" name="translate" caption="name_recai"></a></h2>
+										<div class="textbox__description" name="translate" caption="content_recai"></div>
 											
 											<!-- social-01 -->
 											<!-- <div class="social-01"> -->
@@ -388,43 +267,9 @@
 								<!-- textbox -->
 								<div class="textbox textbox__style-02">
 									<div class="textbox__image"><a href="#"><img src="assets/img/avatars/3.jpg" alt=""/></a></div>
-									<div class="textbox__body" lang="tr">
-										<h2 class="textbox__title"><a href="#">Elif Polat</a></h2>
-										<div class="textbox__description">Ege Üniversitesi Bilgisayar Mühendisliği Bölümü’nden ve Anadolu Üniversitesi İşletme
-											Fakültesi’nden mezun olan, uzun yıllardır bankacılık ve yatırım danışmanlığı sektöründe
-											emek veren Elif Polat, şirketimize gayrimenkul değerleme ve yatırım planlaması sürecinde
-											destek vermektedir. Danışanlarımızın mali ve finansal süreçlerinde, deneyimleri
-											doğrultusunda etkin destek sağlamaktadır.
-											Anadili Türkçe olup, ileri düzeyde İngilizce bilmektedir.</div>
-											
-											<!-- social-01 -->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> -->
-											<!-- End / social-01 -->
-											
-									</div>
-									<div class="textbox__body" lang="ar">
-										<h2 class="textbox__title"><a href="#">ألف بولاط</a></h2>
-										<div class="textbox__description">تحمل شهادة هندسة الحاسوب من جامعة ايجة وشهادة إدارة الأعمال من جامعة أناضول. متخصصة في مجال البنوك، الاستثمار العقاري، التخطيط والاستشارة المالية. لغتها الأم هي اللغة التركية وتتحدث اللغة الانجليزية بطلاقة</div>
-											
-											<!-- social-01 -->
-											<!-- <div class="social-01"> -->
-												<!-- <nav class="social-01__navSocial"><a class="social-01__item" href="#"><i class="fa fa-facebook"></i></a><a class="social-01__item" href="#"><i class="fa fa-skype"></i></a><a class="social-01__item" href="#"><i class="fa fa-twitter"></i></a><a class="social-01__item" href="#"><i class="fa fa-instagram"></i></a> -->
-												<!-- </nav> -->
-											<!-- </div> -->
-											<!-- End / social-01 -->
-											
-									</div>
-									<div class="textbox__body" lang="en">
-										<h2 class="textbox__title"><a href="#">Elif Polat</a></h2>
-										<div class="textbox__description">Ege Üniversitesi Bilgisayar Mühendisliği Bölümü’nden ve Anadolu Üniversitesi İşletme
-											Fakültesi’nden mezun olan, uzun yıllardır bankacılık ve yatırım danışmanlığı sektöründe
-											emek veren Elif Polat, şirketimize gayrimenkul değerleme ve yatırım planlaması sürecinde
-											destek vermektedir. Danışanlarımızın mali ve finansal süreçlerinde, deneyimleri
-											doğrultusunda etkin destek sağlamaktadır.
-											Anadili Türkçe olup, ileri düzeyde İngilizce bilmektedir.</div>
+									<div class="textbox__body">
+										<h2 class="textbox__title"><a href="#" name="translate" caption="name_elif"></a></h2>
+										<div class="textbox__description" name="translate" caption="content_elif"></div>
 											
 											<!-- social-01 -->
 											<!-- <div class="social-01"> -->
@@ -453,66 +298,38 @@
 			<footer class="footer">
 				<div class="footer__main">
 					<div class="row row-eq-height">
-						<div class="col-8 col-sm-7 col-md-9 col-lg-3 ">
-							<div class="footer__item"><a class="consult_logo" href="#"><img src="assets/img/logo.png" alt=""/></a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet ut lacus a tincidunt.</p>
+<!-- 						<div class="col-8 col-sm-7 col-md-9 col-lg-3 "> -->
+						<div class="col-8 col-sm-7 col-md-9 col-lg-3" style="display: flex;align-items: center;">
+							<div class="footer__item" style="margin-bottom:0;">
+								<a class="consult_logo" href="#" style="margin-bottom:0;"><img src="assets/img/logo.png" alt=""/></a>
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1 ">
-							<div class="footer__item">
+<!-- 						<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 offset-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-1"> -->
+						<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 offset-xl-6">
+							<div style="color:#ffff; font-size: 16px;">
 									
-									<!-- widget-text__widget -->
-									<section class="widget-text__widget widget">
-										<div class="widget-text__content">
-											<ul>
-												<li><a href="#">Term of Services </a></li>
-												<li><a href="#">Privacy Policy </a></li>
-												<li><a href="#">Sitemap </a></li>
-												<li><a href="#">Help</a></li>
-											</ul>
-										</div>
-									</section><!-- End / widget-text__widget -->
-									
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 ">
-							<div class="footer__item">
-									
-									<!-- widget-text__widget -->
-									<section class="widget-text__widget widget">
-										<div class="widget-text__content">
-											<ul>
-												<li><a href="#">How It Work </a></li>
-												<li><a href="#">Carrier </a></li>
-												<li><a href="#">Pricing </a></li>
-												<li><a href="#">Support</a></li>
-											</ul>
-										</div>
-									</section><!-- End / widget-text__widget -->
-									
-							</div>
-						</div>
-						<div class="col-md-4 col-lg-2 col-xl-2 ">
-							<div class="footer__item">
-									
-									<!-- form-sub -->
-									<div class="form-sub">
-										<h4 class="form-sub__title">Our Newsletter</h4>
+									19 MAYIS MAHALLESİ EGEMENLİK CAD. D BLK TİCARET Apt. NO: 30 D NİLÜFER/BURSA </br>
+									+90 506 115 1844
+									<!-- 
+<div class="form-sub">
 										<form class="form-sub__form">
-											<div class="form-item">
+											<div class="form-item" style="line-height:0;">
 												<input class="form-control" type="email" placeholder="Enter Your Email Address..."/>
 											</div>
-											<div class="form-submit">
+											<div class="form-submit" style="line-height:0;">
 												<button class="form-button" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
 											</div>
 										</form>
-									</div><!-- End / form-sub -->
+									</div>
+ -->
 									
 							</div>
 						</div>
-						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2  consult_backToTop">
-							<div class="footer__item"><a href="#" id="back-to-top"> <i class="fa fa-angle-up" aria-hidden="true"> </i><span>Back To Top</span></a></div>
-						</div>
+<!-- 						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-2  consult_backToTop"> -->
+<!-- 						<div class="col-sm-6 col-md-4 col-lg-2 col-xl-3  consult_backToTop"> -->
+<!-- 							<div class="footer__item"><a href="#" id="back-to-top"> <i class="fa fa-angle-up" aria-hidden="true"> </i><span>Back To Top</span></a></div> -->
+<!-- 							<h4 class="form-sub__title">Our Newsletter</h4> -->
+<!-- 						</div> -->
 					</div>
 				</div>
 				
@@ -520,7 +337,9 @@
 			
 		</div>
 		<!-- Vendors-->
+		
 		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/translate.js"></script>
 		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
 		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
 		<script type="text/javascript" src="assets/vendors/jquery.countdown/jquery.countdown.min.js"></script>
